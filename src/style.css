@@ -1,5 +1,50 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+html, body {
+  height: 100%;
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #2c3e50, #1a252f);
+  color: #ffffff;
+  align-items: center; 
+}
+
+#excusa {
+  margin-top: 20px;
+  font-weight: 300;
+  min-height: 40px;
+}
+
+button {
+  transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  display: block;
+  margin: 30px auto;
+  max-width: 200px;
+  border-radius: 6px;
+  border: none;
+  padding: 15px 30px;
+  background-color: transparent;
+  font-size: 15px;
+}
+
+button.gen {
+  color: rgba(252, 137, 52, 0.9);
+  box-shadow: rgba(252, 137, 52, 0.9) 0 0px 0px 2px inset;
+}
+
+button.gen:hover {
+  color: rgba(255, 255, 255, 0.95);
+  box-shadow: rgba(252, 137, 52, 0.9) 0 0px 0px 40px inset;
+  cursor: pointer;
 }
